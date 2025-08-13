@@ -1,0 +1,11 @@
+{
+  "name": "pemo-qoyod-sync",
+  "version": "1.0.0",
+  "description": "Sync Pemo transactions to Qoyod invoices using a Vercel cron job",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/sync-invoices.js"
+  },
+  "keywords": ["vercel", "cron", "pemo", "qoyod", "invoice", "sync"],
+  "license": "MIT"
+}
