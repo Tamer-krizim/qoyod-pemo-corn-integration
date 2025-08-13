@@ -16,9 +16,8 @@ This repository contains a simple serverless function and configuration for depl
 2. Define the following environment variables in your Vercel project settings:
    - `PEMO_API_KEY` – The API key you obtained from Pemo to authenticate requests.
    - `QOYOD_API_KEY` – Your Qoyod API key.  You can generate one from the **General Settings** in your Qoyod dashboard.
-   - `QOYOD_CONTACT_ID` – The numeric identifier of the contact to assign invoices to in Qoyod.
-   - `QOYOD_INVENTORY_ID` – The inventory identifier where invoices should be recorded in Qoyod.
-   - `QOYOD_PRODUCT_ID` – The product identifier in Qoyod representing a generic expense line item.
+   - `QOYOD_DEBIT_ACCOUNT_ID` – رقم حساب المصروف (الحساب الذي سيتم تخصيصه كمدين) في قيود.
+   - `QOYOD_CREDIT_ACCOUNT_ID` – رقم حساب النقدية أو البنك (الحساب الذي سيتم تخصيصه كدائن) في قيود.
 
 3. Adjust the cron schedule in `vercel.json` if you need a different run time.  The default (`"0 5 * * *"`) runs daily at 05:00 UTC【66074166207259†L1224-L1229】.
 
